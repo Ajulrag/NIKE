@@ -5,7 +5,7 @@ const imageUpload = require('../middlewares/imageUpload.js')
 
 router.get('/', adminController.products)
 router.get('/addproduct', adminController.getAddProduct)
-router.post('/addproduct', imageUpload.upload.any(), adminController.addProduct)
+router.post('/addproduct', imageUpload.upload.array('images', 4), adminController.addProduct)
 router.get('/editproduct/:id', adminController.getEditProduct)
 router.put('/editproduct/:id', adminController.editProduct)
 router.delete('/product/:id', adminController.deleteProduct)

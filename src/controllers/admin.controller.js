@@ -22,8 +22,16 @@ const addProduct = catchAsync(async (req, res) => {
     isFeatured
   } = req.body
   const images = req.files.map(file => file.path)
-  const product = await adminServices.addNewProduct(productname, edition, size, price, shortDesc, images, isFeatured)
-  res.status(201).json(success('Product added succesfully', { product }))
+  const product = await adminServices.addNewProduct(
+    productname,
+    edition,
+    size,
+    price,
+    shortDesc,
+    images,
+    isFeatured
+  )
+  res.status(201).json(success('Product added successfully', { product }))
 })
 
 const getEditProduct = catchAsync(async (req, res) => {

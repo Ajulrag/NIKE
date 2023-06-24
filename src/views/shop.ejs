@@ -65,7 +65,8 @@
 
         .product {
            
-            
+            align-items: center;
+            text-align: center;
             padding: 10px;
             margin-bottom: 20px;
             background: white;
@@ -74,6 +75,7 @@
 
         .product img {
             width: 100%;
+            padding-left: 0px;
         }
 
         .product h3 {
@@ -107,7 +109,7 @@
         }
         .myDiv {
           
-            background-color: lightgray;
+            background-color: rgba(211, 211, 211, 0);
             padding: 10px;
         }
         img{
@@ -115,27 +117,64 @@
             margin:0 auto;
 
         }
+        #logo-img {
+  height: 25px;
+}
+
+
+#img-fav {
+  height: 25px;
+}
+
+
+
+
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand" href="#"><img id="logo-img" src="/img/logo.png.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">New & Featured</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Kids</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Sale</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">SNKRS</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <a href=""><img id="img-fav" src="./Assets/heart.png" alt=""></a>
+            <a href=""><img id="img-fav" src="./Assets/shopping-bag.png" alt=""></a>
+          </form>
+        </div>
+      </nav>
     <div class="container">
-        <button class="btn" id="paginationBtn" onclick="viewFilter()">Click Me</button>
+        <button class="btn" style="margin-bottom: 30px;" id="paginationBtn" onclick="viewFilter()">Filter</button>
         
         <div >
         <div style="display: flex;gap: 10px;">
             <div style="height: 100%;width: 380px;  display: none;" id="myDiv" class="myDiv">
-                <h3>Filter Criteria</h3>
-                <h4>waesrdtgyuijokpiuytrszdxcgvhbjknmbvcxdftgfhvbjnk</h4>
+                
+             <img src="https://cdn-aogbe.nitrocdn.com/LYdLTjFVvLmCmiqbCPnUYWCzZdgiptoK/assets/images/optimized/rev-7e78de3/wp-content/uploads/2020/03/CategoryFilter.png" alt="">
+               
                 <!-- Add your filter criteria elements here -->
             </div>
           <div id="layout1" class="product-list">  
