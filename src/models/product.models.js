@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const userSchema = new Schema({
+const productSchema = new Schema({
   productname: {
     type: String,
     required: true
@@ -21,7 +21,23 @@ const userSchema = new Schema({
   shortDesc: {
     type: String,
     required: true
+  },
+  image: {
+    type: String
+  },
+  image1: {
+    type: String
+  },
+  image2: {
+    type: String
+  },
+  image3: {
+    type: String
+  },
+  isFeatured: {
+    type: Boolean,
+    default: false
   }
 })
 
-module.exports = mongoose.model('users', userSchema)
+module.exports = mongoose.model('products', productSchema)

@@ -1,5 +1,13 @@
-const userModel = require('../models/user.models.js')
+const productModel = require('../models/product.models.js')
 
-const getProduct = async () => userModel.find()
+const getProduct = async () => productModel.find({ isFeatured: true })
 
-module.exports = { getProduct }
+const getProducts = async () => productModel.find()
+
+const getProductById = async (id) => productModel.findById(id)
+
+module.exports = {
+  getProduct,
+  getProducts,
+  getProductById
+}

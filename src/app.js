@@ -7,6 +7,7 @@ const session = require('express-session')
 const dotenv = require('dotenv')
 const MongoStore = require('connect-mongodb-session')(session)
 const userRoutes = require('./routes/user.routes.js')
+const adminRoutes = require('./routes/admin.routes.js')
 
 dotenv.config()
 
@@ -39,6 +40,7 @@ app.use(session({
 }))
 
 app.use('/', userRoutes)
+app.use('/admin', adminRoutes)
 
 module.exports = {
   app
