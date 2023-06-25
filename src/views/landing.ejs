@@ -10,11 +10,10 @@
 </head>
 
 <body>
-<style>
+  <style>
     #logo-img {
   height: 25px;
 }
-
 
 #img-fav {
   height: 25px;
@@ -25,24 +24,29 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.navbar-light .navbar-nav .active>.nav-link{
+.navbar-light .navbar-nav .active>.nav-link {
   color: rgb(255, 255, 255) !important;
 }
-#search{
+
+#search {
   width: 252px;
   height: 35px;
   background-image: linear-gradient(to right, #353333, #504a52);
 }
-
 
 .img-wrapper img {
   height: auto;
   width: 80%;
   transform: rotate(-45deg);
 }
- 
+
 .logo-svg {
   max-width: 100%;
   height: auto;
@@ -84,7 +88,6 @@ body {
   height: 100%;
 }
 
-
 @keyframes reveal {
   0% {
     opacity: 0;
@@ -97,10 +100,10 @@ body {
   100% {
     opacity: 1;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  } 
+  }
+}
 
-  
-}.nike-text-container {
+.nike-text-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -129,6 +132,7 @@ body {
     font-size: 40vw;
   }
 }
+
 @media (max-width: 320px) {
   .nike-text-container {
     position: absolute;
@@ -139,7 +143,7 @@ body {
     height: 100%;
     z-index: -1;
   }
-  
+
   .nike-text {
     font-size: 40vw;
     font-weight: bold;
@@ -168,9 +172,25 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  #navbarSupportedContent {
+    display: none;
+  }
 
+  #search {
+    width: 150px;
+  }
 
-</style>
+  #logo-img {
+    height: 20px;
+  }
+
+  #img-fav {
+    height: 20px;
+  }
+}
+
+  </style>
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
     <a class="navbar-brand" href="#"><img id="logo-img" src="/img/logo.png.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -206,26 +226,25 @@ body {
     </div>
   </nav>
   
-
-
+  <div class="nike-text-container">
     <div class="nike-text">
       NIKE
     </div>
+  </div>
   
-  
+  <svg class="nike-path" viewBox="0 0 1160 774" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1159.5 2.02186e-05L291.499 774.5C214.499 774.5 201.5 774.5 141.499 774C73.7165 773.435 59.4996 774 0.499297 774C0.498937 697 0.499708 701.101 0.499999 529.5C0.499998 444.507 3.24923e-06 249.5 3.05781e-06 167.5C-5.66088 193.405 3.4997 464 98.2659 549.912C121.584 567.041 178.279 572.094 212.408 565.824C239.797 560.793 270.032 548.494 302.171 528.993L1159.5 2.02186e-05Z" fill="url(#paint0_linear_22_2)"/>
+    <defs>
+      <linearGradient id="paint0_linear_22_2" x1="1015.5" y1="87.0006" x2="-46.6311" y2="415.569" gradientUnits="userSpaceOnUse">
+        <stop offset="0.190837" stop-color="#E38A58" stop-opacity="0.99"/>
+        <stop offset="0.952461" stop-color="#C365E3"/>
+      </linearGradient>
+    </defs>
+  </svg>
 
-    <svg class="nike-path" viewBox="0 0 1160 774" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M1159.5 2.02186e-05L291.499 774.5C214.499 774.5 201.5 774.5 141.499 774C73.7165 773.435 59.4996 774 0.499297 774C0.498937 697 0.499708 701.101 0.499999 529.5C0.499998 444.507 3.24923e-06 249.5 3.05781e-06 167.5C-5.66088 193.405 3.4997 464 98.2659 549.912C121.584 567.041 178.279 572.094 212.408 565.824C239.797 560.793 270.032 548.494 302.171 528.993L1159.5 2.02186e-05Z" fill="url(#paint0_linear_22_2)"/>
-      <defs>
-        <linearGradient id="paint0_linear_22_2" x1="1015.5" y1="87.0006" x2="-46.6311" y2="415.569" gradientUnits="userSpaceOnUse">
-          <stop offset="0.190837" stop-color="#E38A58" stop-opacity="0.99"/>
-          <stop offset="0.952461" stop-color="#C365E3"/>
-        </linearGradient>
-      </defs>
-    </svg>
-
-  <div style="margin-left: 1200px;padding-top: 150px;"><button><a href="/shop">SHOP</a></button></div>
-
+  <div class="text-center mt-5">
+    <button class="btn btn"><a href="/shop">SHOP</a></button>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1"></script>
