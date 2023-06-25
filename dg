@@ -1,0 +1,23 @@
+[33mcommit dcf094a305a79750a7afcea74c860518287f3c88[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Ajulrag.b <ajulrag353@gmail.com>
+Date:   Sun Jun 25 12:12:19 2023 +0530
+
+    update: Hosting dev configured
+
+[33mcommit 473ebb00dab67b1c82aa0afee88b20dca0bf1c6f[m
+Author: Ajulrag.b <ajulrag353@gmail.com>
+Date:   Sun Jun 25 02:22:37 2023 +0530
+
+    feat: API & JWT
+
+[33mcommit 62977f1765353cc24d35165e184337b195e4d3ad[m
+Author: Ajulrag.b <ajulrag353@gmail.com>
+Date:   Sat Jun 24 13:05:54 2023 +0530
+
+    feat: Shop page
+
+[33mcommit 53ddbc6969d2938ab07b98600b02e6130a4f79cf[m
+Author: Ajulrag.b <ajulrag353@gmail.com>
+Date:   Thu Jun 22 23:28:01 2023 +0530
+
+    feat: Configured connections
