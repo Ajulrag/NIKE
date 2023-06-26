@@ -191,6 +191,48 @@ body {
     height: 20px;
   }
 }
+.nike-image{
+ 
+  text-align: center;
+  transform: rotate(90deg);
+}
+.nike-image img{
+  transform: rotate(-45deg);
+}
+.nike-image {
+    
+    animation: slideInz 1.5s ease-out forwards;
+    opacity: 0;
+    animation-delay: 1s;
+    
+    
+  }
+
+
+
+@keyframes slideInz {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 320px) {
+  .nike-image {
+position: relative;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+  }
+}
 
   </style>
     <div class="full">
@@ -249,6 +291,9 @@ body {
     <button class="btn btn"><a href="/shop">SHOP</a></button>
   </div>
 
+  <div class="nike-image">
+    <img class="nimg" src="/img/nikeShoe1.png" alt="">
+  </div>
   
 </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
