@@ -179,11 +179,20 @@
 
     </div>
     <div class="product-thumbnails">
-      <img src="<%=product.image%>" alt="Thumbnail 1" data-image="<%=product.image%>">
-      <img src="<%=product.image1%>" alt="Thumbnail 2" data-image="<%=product.image1%>">
-      <img src="<%=product.image2%>" alt="Thumbnail 3" data-image="<%=product.image2%>">
-      <img src="<%=product.image3%>" alt="Thumbnail 4" data-image="<%=product.image3%>">
+      <% if (product && product.image) { %>
+        <img src="<%=product.image%>" alt="Thumbnail 1" data-image="<%=product.image%>">
+      <% } %>
+      <% if (product && product.image1) { %>
+        <img src="<%=product.image1%>" alt="Thumbnail 2" data-image="<%=product.image1%>">
+      <% } %>
+      <% if (product && product.image2) { %>
+        <img src="<%=product.image2%>" alt="Thumbnail 3" data-image="<%=product.image2%>">
+      <% } %>
+      <% if (product && product.image3) { %>
+        <img src="<%=product.image3%>" alt="Thumbnail 4" data-image="<%=product.image3%>">
+      <% } %>
     </div>
+    
     <div class="product-info">
       <h1>Killshot 2 Leather Shoe</h1>
       <p>Classic design meets modern materials. The Nike Killshot 2 Leather Shoe brings OG court style to your everyday look with a retro low-top hoops design. Heritage details like the Swoosh design and rubber outsole keep it true to its '80s roots.</p>
