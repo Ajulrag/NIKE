@@ -175,7 +175,8 @@
 
   <div class="product-details">
     <div class="product-image">
-      <img id="main-image" src="<%=product.image%>" alt="Product Image" data-zoom-image="<%=product.image%>">
+      <img id="main-image" src="<%= product && product.image ? product.image : '' %>" alt="Product Image" data-zoom-image="<%= product && product.image ? product.image : '' %>">
+
     </div>
     <div class="product-thumbnails">
       <img src="<%=product.image%>" alt="Thumbnail 1" data-image="<%=product.image%>">
