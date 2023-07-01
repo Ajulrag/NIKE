@@ -315,6 +315,7 @@ button.cta:hover {
   }
 
   .menu-list {
+    z-index: 2;
     position: fixed;
     top: 0;
     right: 0;
