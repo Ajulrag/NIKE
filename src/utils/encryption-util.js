@@ -1,7 +1,7 @@
 const { createCipheriv, createDecipheriv, scryptSync } = require('crypto')
 
 const algorithm = 'aes-192-cbc'
-const iv = Buffer.alloc(16, 0) // Initialization crypto vector
+const iv = Buffer.alloc(16, 0)
 
 function encrypt (data) {
   const key = scryptSync(process.env.JWT_SECRET, 'salt', 24)
